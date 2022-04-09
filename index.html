@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+     href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/> 
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+ <body>
+
+    <!--Шапка-->
+    <header>
+      <div class="container header">
+       <nav class="navigation">  
+        <a class="logo"  href="index.html" lang="en"> Web<span class="logo-header">Studio</span>
+          </a> 
+        <ul class="site-nav">
+            <li class="item">
+              <a  href="./index.html" class="site-nav-link active-page"> Студия </a> 
+            </li>
+            <li class="item">
+              <a  href="./portfolio.html" class="site-nav-link"> Портфолио </a>
+             </li>
+            <li class="item">
+              <a  href="#contacts" class="site-nav-link"> Контакты </a>
+             </li>
+        </ul>
+       </nav>
+       
+      <!--Контакти заголовка-->
+        <ul class="header-contacts">
+            <li class="item">
+              <a class="contact-adress" href=":info@devstudio.com">
+                <svg class="icon_item" width="16" height="12">
+                   <use href="./img/sprite-svg.svg#icon-mail2"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="contact-number">
+                <svg class="icon_item" width="16" height="12">
+                   <use href="./img/sprite-svg.svg#icon-mobile"></use>
+                </svg>
+                +380961111111</a>
+            </li>
+        </ul>
+      </div>
+    </header>
+
+     <!--Герой-->
+    <main>
+        <section class="hero">
+          <div class="container">
+             <h1 class="main-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+             <button class="modal-btn" type="button">Заказать услугу</button>
+          </div>
+        </section>
+
+    <!--Преимущества-->
+
+     <section class="advantages">
+      <div class="container">
+       <ul class="advantages-content"> 
+        <li class="features"> 
+          <h3 class="advantages-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+          <p class="advantages-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        </li> 
+        <li class="features">  
+          <h3 class="advantages-title">ПУНКТУАЛЬНОСТЬ</h3>
+          <p class="advantages-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        </li>
+        <li class="features">
+          <h3 class="advantages-title">ПЛАНИРОВАНИЕ</h3> 
+          <p class="advantages-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+        </li>
+        <li class="features">
+          <h3 class="advantages-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+          <p class="advantages-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        </li>
+       </ul> 
+      </div>
+     </section>
+
+    <!--Чем ми занимаемся-->
+     <section class="section">
+       <div class="container">
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul class="boxes">
+           <li class="box">
+             <img 
+              src="./img/about-img-1.jpg" 
+              alt="набор текста" width="370"
+              height="294" />
+            </li>
+           <li class="box">
+             <img
+              src="./img/about-img-2.jpg"
+              alt="установки с мобильного" width="370" 
+              height="294" />
+            </li>
+           <li class="box">
+             <img 
+              src="./img/about-img-3.jpg"
+              alt="палитра цветов" width="370"
+              height="294" />
+            </li>
+        </ul>
+       </div>
+     </section>
+         
+    <!--Наша команда-->
+     <section class="section team">
+       <div class="container">
+         <h2 class="section-title">Наша команда</h2>
+          <ul class="team">
+            <li class="team-mate">
+              <img
+               src="./img/about-img-4.jpg" 
+               alt="фото игоря" width="270"
+               height="260" 
+              />
+              <div class="team-card">
+               <h3 class="section-name">Игорь Демьяненко</h3>
+               <p class="section-profession">Product Designer</p>
+                <ul class="social-list">
+                 <li class="social-list-item">
+
+                 </li>
+                </ul>
+              </div>
+            </li>  
+            <li class="team-mate">
+              <img
+              src="./img/about-img-5.jpg"
+              alt="фото ольги" width="270"
+              height="260" 
+              />
+              <div class="team-card">
+               <h3 class="section-name">Ольга Репина</h3>
+               <p class="section-profession">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="team-mate">
+              <img 
+              src="./img/about-img-6.jpg"
+              alt="фото николая" width="270"
+              height="260" 
+              />
+              <div class="team-card">
+               <h3 class="section-name">Николай Тарасов</h3>
+               <p class="section-profession">Marketing</p>
+              </div>
+            </li>
+            <li class="team-mate">
+              <img 
+              src="./img/about-img-7.jpg"
+              alt="фото михаила" width="270"
+              height="260" 
+              />
+              <div class="team-card">
+               <h3 class="section-name">Михаил Ермаков</h3>
+               <p class="section-profession">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+       </div>
+     </section>
+    </main>  
+
+    <!--Подвал-->
+    <footer class="footer">
+      <div class="container footer">
+        <a class="footer-logo" href="index.html" lang="en">Web<span class="logo-footer">Studio</span> </a>
+        <address class="address">
+         <ul class="footer-contacts" id="contacts">
+            <li>
+              <a class="footer-address-map" href="contact">г. Киев, пр-т Леси Украинки, 26</a>  
+            </li>
+            <li>
+              <a class="footer-address" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li>
+              <a  href="tel:+380961111111" class="footer-address">+380961111111</a>
+            </li>
+         </ul>
+             
+
+        </address>
+      </div>
+    </footer>
+ </body>
+</html>
