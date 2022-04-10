@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --background-color: #2f303a;
   --third-text-color: #ffffff;
+  --icon-grey-main-color:#afb1b8;
   --card-border: 1px solid #eeeeee;
   --card-list-gap: 15px;
 }
@@ -151,10 +152,10 @@ header {
 .contact-number:focus {
   color: var(--accent-color);
 }
-.icon_item {
-  outline: 1px solid blue;
+ 
+.icon-item {
+  fill: var(--icon-grey-main-color);
   margin-right: 10px;
-  fill: currentColor;
 }
 
 .header-contacts {
@@ -349,6 +350,37 @@ header {
 
 .team-mate:last-child {
   padding-right: 0px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-text-color);
+  border-radius: 50%;
+}
+.social-list-icon {
+  fill: var(--icon-grey-main-color);
+  margin-left: 12px;
+  margin-right: 12px;
+  border: 2px dashed #2a2a2a;
+  border-radius: 8px;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+.social-list-link:hover .social-list-icon {
+  fill: var(--third-text-color);
+}
+.social-list-link:focus .social-list-icon {
+  fill: var(--third-text-color);
 }
 
 /*Подвал*/
