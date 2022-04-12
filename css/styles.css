@@ -369,7 +369,6 @@ header {
   fill: var(--icon-grey-main-color);
   margin-left: 12px;
   margin-right: 12px;
-  border: 2px dashed #2a2a2a;
   border-radius: 8px;
 }
 .social-list-link:hover,
