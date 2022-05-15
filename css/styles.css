@@ -152,11 +152,18 @@ header {
 .contact-number:focus {
   color: var(--accent-color);
 }
- 
+ .contact-adress,
+ .contact-number {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
 .icon-item {
   fill: var(--icon-grey-main-color);
   margin-right: 10px;
 }
+ 
 
 .header-contacts {
   display: flex;
@@ -322,15 +329,23 @@ header {
 }
 .team-mates {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .team-card {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .team-mate {
-  width: 270px;
-  height: 428px;
   margin-right: 30px;
+  text-align: center;
+}
+.team-mate {
+  box-sizing: border-box;
+  border-width: 270px;
+  border: 1px;
   background-color: var(--third-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -362,25 +377,59 @@ header {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--main-text-color);
+  background-color:  none;
   border-radius: 50%;
 }
 .social-list-icon {
   fill: var(--icon-grey-main-color);
-  margin-left: 12px;
-  margin-right: 12px;
-  border-radius: 8px;
+  
 }
+
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
 }
-.social-list-link:hover .social-list-icon {
+.social-list-link:hover,
+.social-list-link:focus  { 
   fill: var(--third-text-color);
 }
-.social-list-link:focus .social-list-icon {
-  fill: var(--third-text-color);
+/*Постоянные клиенты*/
+.clients-list {
+  display: flex;
 }
+.clients-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.clients-list .clients-logo:hover,
+.clients-list .clients-logo:focus {
+  fill: #2196f3;
+}
+.clients-logo {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--secondary-text-color);
+  border: 1pxsolid var(--secondary-text-color) ;
+}
+
 
 /*Подвал*/
 
@@ -407,7 +456,7 @@ footer {
   line-height: 1.7;
   letter-spacing: 0.02em;
   color: var(--third-text-color);
-  margin-bottom: 9px;
+  cursor: pointer;
 }
  
 .footer-address-map:hover,
@@ -423,13 +472,14 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6); 
+  cursor: pointer;
 }
 
 .footer-address:hover,
 .footer-address:focus {
   color: var(--accent-color);
 }
-.container.footer {
+.container footer {
   display: flex;
   flex-direction: column;
 }
@@ -450,13 +500,65 @@ footer {
   line-height: 1.2;
   text-decoration: none;
   font-family: Raleway, sans-serif;
-  color: var(--accent-color); 
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
 .footer-contacts {
   margin: 0;
 }
- 
+.join-name {
+  font-family:"Roboto",sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03;
+  color: var(--third-text-color);
+  text-transform: uppercase;
+}
+.social-list-footer {
+  display: flex;
+  margin-top: 10px;
+}
+.social-list-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 50%;
+}
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  background-color: var(--main-text-color);
+}
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  background-color: var(--accent-color);
+}
+.social-list-link-footer:hover.social-list-icon {
+   fill:#ffffff ;
+}
+.social-list-item {
+   margin-right: 10px;
+}
+.social-list-icon-footer {
+  fill: var(--third-text-color);
+}
+
+.footer-info  {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 70px;
+}
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+
 /*Фильтри*/
 .button-secondary {
   cursor: pointer;
