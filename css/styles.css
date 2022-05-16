@@ -404,6 +404,13 @@ header {
   box-sizing: border-box;
   cursor: pointer;
 }
+.clients-item {
+  width: 170px;
+  height: 90px;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
 .clients-link {
   display: flex;
   width: 170px;
@@ -646,4 +653,15 @@ footer {
  
 .product-card:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+
+.portfolio-product {
+  display: block;
+}
+
+.portfolio-product:hover,
+.portfolio-product:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+      0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
 }
