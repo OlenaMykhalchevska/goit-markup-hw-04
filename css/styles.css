@@ -247,7 +247,28 @@ header {
 .features:last-child {
   margin-right: 0px;
 }
-
+.features::before {
+  display: block;
+  content: "";
+  height: 120px;
+  outline: 1px solid rgb(80, 78, 78);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:#afb1b8
+}
+.features:nth-child(1)::before {
+  background-image: url("../img/icons/antenna.svg");
+}
+.features:nth-child(2)::before {
+  background-image: url("../img/icons/clock.svg");
+}
+.features:nth-child(3)::before {
+  background-image: url("../img/icons/diagram.svg");
+}
+.features:nth-child(4)::before {
+  background-image: url("../img/icons/astronaut.svg");
+}
 .advantages-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -404,10 +425,7 @@ header {
   box-sizing: border-box;
   cursor: pointer;
 }
-.clients-item {
-  width: 170px;
-  height: 90px;
-}
+ 
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -434,7 +452,7 @@ header {
 .clients-link:hover,
 .clients-link:focus {
   color: var(--secondary-text-color);
-  border: 1pxsolid var(--secondary-text-color) ;
+  border: 1px solid var(--secondary-text-color) ;
 }
 
 
