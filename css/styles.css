@@ -158,11 +158,9 @@ ol {
  }
 .contact-adress {
    align-items: baseline;
-}
-.contact-number {
+   
    align-items:center;
 }
-
 
 .contact-adress:hover,
 .contact-adress:focus {
@@ -264,28 +262,19 @@ ol {
   margin-right: 0px;
  
 }
-.features::before {
-  display: block;
-  content: "";
+ 
+.icon-box {
+  width: 270px;
   height: 120px;
-  outline: 1px solid rgb(80, 78, 78);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color:#afb1b8
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.features:nth-child(1)::before {
-  background-image: url("../img/icons/antenna.svg" );
-}
-.features:nth-child(2)::before {
-  background-image: url("../img/icons/clock.svg");
-}
-.features:nth-child(3)::before {
-  background-image: url("../img/icons/diagram.svg");
-}
-.features:nth-child(4)::before {
-  background-image: url("../img/icons/astronaut.svg");
-}
+ 
 .advantages-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -359,8 +348,11 @@ ol {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
+  justify-content: space-between;
+  border-radius: 0px 0px 4px 4px;
 }
 .section {
+  padding-top: 94px;
   padding-right: 0px;
   padding-bottom: 94px;
   padding-left: 0px;
@@ -371,6 +363,7 @@ ol {
   align-items: center;
 }
 .team-card {
+  width: 270px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;
@@ -382,7 +375,8 @@ ol {
 }
 .team-mate {
   box-sizing: border-box;
-  border-width: 270px;
+  width: 270px;
+  
   border: 1px;
   background-color: var(--third-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -409,6 +403,7 @@ ol {
   justify-content: space-between;
   margin-top: 16px;
 }
+
 .social-list-link {
   display: flex;
   align-items: center;
@@ -432,8 +427,11 @@ ol {
   fill: var(--third-text-color);
 }
 /*Постоянные клиенты*/
+
 .clients-list {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .clients-item {
   display: flex;
@@ -443,7 +441,7 @@ ol {
   cursor: pointer;
 }
  
-.clients-item:not(:last-child) {
+.clients-item:  {
   margin-right: 30px;
 }
 .clients-link {
@@ -452,27 +450,27 @@ ol {
   height: 92px;
   align-items: center;
   justify-content: center;
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  color: var(--main-text-color);
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
 }
-.clients-list .clients-logo:hover,
-.clients-list .clients-logo:focus {
-  fill: #2196f3;
+ 
+.clients-link:hover {
+  border-color: var(--accent-color);
 }
+
 .clients-logo {
-  width: 106px;
-  height: 60px;
-  fill: currentColor;
-}
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--secondary-text-color);
-  border: 1px solid var(--secondary-text-color) ;
-}
+  fill: #afb1b8;
+} 
 
-
+.clients-link:hover .clients-logo ,
+.clients-link:focus .clients-logo {
+  fill: var(--accent-color);
+}
+ 
+   
 /*Подвал*/
 
 .address {
@@ -676,12 +674,18 @@ footer {
   margin: calc(-1* var(--card-list-gap));
 }
 .product-card {
-  margin: var(--card-list-gap);
-  flex-basis: calc(100% / 3-2 * var(--card-list-gap))
-  flex-basis: calc((100%-90px) / 3);
-}
+  display: block;
+    margin: var(--card-list-gap);
+    flex-basis: calc(100% / 3-2 * var(--card-list-gap))
+    flex-basis: calc((100%-90px) / 3);
+  }
+
+ 
 .card-content {
-  padding: 20px 24px;
+  padding-top: 20px ;
+  padding-right: 24px ;
+  padding-bottom: 20px;
+  padding-left: 24px;
   border: var(--card-border);
   border-top: 0;
   border-bottom: 1px solid #eeeeee;
@@ -702,17 +706,19 @@ footer {
   margin-bottom: 0px;
 }
 
-.portfolio-product {
-  display: block;
-}
 .portfolio-product:nth-child(3n+1) {
   margin-left: 0px;
 }
 
-.portfolio-product:hover {
+.portfolio-product {
+  display: block;
+}
+
+.portfolio-product:hover, 
+.portfolio-product:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
       0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-      background: #ffffff;
-      cursor: pointer;
+  background: #ffffff;
+  cursor: pointer;
 }
