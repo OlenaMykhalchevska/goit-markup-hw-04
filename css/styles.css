@@ -675,9 +675,9 @@ footer {
 }
 .product-card {
   display: block;
-    margin: var(--card-list-gap);
-    flex-basis: calc(100% / 3-2 * var(--card-list-gap))
-    flex-basis: calc((100%-90px) / 3);
+  margin: var(--card-list-gap);
+  flex-basis: calc(100% / 3-2 * var(--card-list-gap))
+          calc((100%-90px) / 3);
   }
 
  
@@ -697,7 +697,7 @@ footer {
   font-weight: 700 ;
   font-size: 18px;
   line-height: 2;
-  letter: spacing 0.06em;
+  letter-spacing: 0.06em;
   color: var(--secondary-text-color) ;
   text-decoration: none;
 }
