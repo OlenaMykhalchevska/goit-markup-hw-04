@@ -282,6 +282,7 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-bottom: 10px;
 }
 
 .advantages-text {
@@ -402,6 +403,7 @@ ol {
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
+  margin-bottom: 0;
 }
 
 .social-list-link {
@@ -422,8 +424,8 @@ ol {
 .social-list-link:focus {
   background-color: var(--accent-color);
 }
-.social-list-link:hover,
-.social-list-link:focus  { 
+.social-list-icon:hover,
+.social-list-icon:focus  { 
   fill: var(--third-text-color);
 }
 /*Постоянные клиенты*/
@@ -514,12 +516,15 @@ footer {
   color: rgba(255, 255, 255, 0.6); 
   cursor: pointer;
 }
+.footer-item {
+  margin-bottom: 9px;
+}
 
 .footer-address:hover,
 .footer-address:focus {
   color: var(--accent-color);
 }
-.container footer {
+.container footer  {
   display: flex;
   flex-direction: column;
 }
@@ -652,7 +657,8 @@ footer {
 
 /*Портфолио*/
 .section {
-  padding: 94px 0;
+  padding-bottom: 94px ;
+  padding-top: 94px;
 }
 .portfolio-buttons {
   display: flex;
